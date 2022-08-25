@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="calc.css">
+    <script src="calc.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <main id="main">
+        <div class="nav">
+            <div class="dropdown">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="dark-mode">
+                <div class="darkOrLight"></div>
+            </div>
+        </div>
+        <div class="screen">
+            <div  id="history"></div>
+            <div  id="input"></div>
+        </div>
+        <div class="btn">
+            <button onclick="clrall()">AC</button>
+            <button  id="clear" onclick="clr()">C</button>
+            <button onclick="calculate(' %  ')">%</button>
+            <button onclick="calculate(' - ')">-</button>
+            <button onclick="calculate('1')">1</button>
+            <button onclick="calculate('2')">2</button>
+            <button onclick="calculate('3')">3</button>
+            <button onclick="calculate(' * ')">*</button>
+            <button onclick="calculate('4')">4</button>
+            <button onclick="calculate('5')">5</button>
+            <button onclick="calculate('6')">6</button>
+            <button onclick="calculate(' + ')">+</button>
+            <button onclick="calculate('7')">7</button>
+            <button onclick="calculate('8')">8</button>
+            <button onclick="calculate('9')">9</button>
+            <button onclick="calculate('/')">/</button>
+            <button onclick="calculate('.')">.</button>
+            <button onclick="calculate('0')">0</button>
+            <button onclick="calculate('00')">00</button>
+            <button onclick="compute()">=</button>
+        </div>
+        <div class="footer">
+            <p> &copy; <a href="https://github.com/herdhebayor" target="_blank">Herdhebayor</a> </p>
+        </div>
+    </main>
+</body>
+</html>

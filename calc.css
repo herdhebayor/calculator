@@ -1,0 +1,125 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(19, 13, 13);
+}
+main{
+    width: 350px;
+    height: fit-content;
+    background-color: #fff;
+}
+.dropdown{
+    background-color: transparent;
+    margin: 0 5px;
+}
+.dropdown div{
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    margin: 3px;
+}
+.nav{
+    background-color: rgb(238, 234, 234);
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.dark-mode{
+    width: 40px;
+    height: 20px;
+    border-radius: 45px;
+    margin: 0 5px;
+    background-image: linear-gradient(to left, rgb(47, 47, 49), rgb(255, 255, 253)) ;
+}
+.darkOrLight{
+    position: relative;
+    left:0 ;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+.screen{
+    margin: 5px;
+    overflow: hidden;
+}
+#history{
+    width:100%;
+    height: 250px;
+    color: rgb(99, 21, 34);
+    opacity: 0.6;
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: right;
+    overflow-y:auto;
+    
+}
+#input{ 
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: right;
+    border: 0;
+    border-bottom: 2px solid rgb(226, 5, 5);
+    color: #000;
+    background-color: transparent;
+}
+.btn{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+button{
+    height: 50px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: rgb(197, 11, 11);
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.footer{
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 0;
+    opacity: 0.4;
+}
+.footer a{
+    color: aqua;
+    font-style: italic;
+    font-weight: 400;
+    text-decoration: none;
+    animation: changeColor 2s infinite;
+}
+.footer a:hove{
+    animation-play-state: paused;
+}
+@keyframes changeColor{
+    0%{color: aqua;}
+    20%{ color: blue;}
+    40%{color: red;}
+    60%{color: yellow;}
+    80%{color: green;}
+    100%{color: #000;}
+
+}
+@media screen and (max-width:375px) {
+    body{
+        margin: 0;
+    }
+    main{
+        margin: 0;
+    }
+    
+}
