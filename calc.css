@@ -14,14 +14,18 @@ main{
     background-color: transparent;
     margin: 0 5px;
 }
-.dropdown div{
-    width: 20px;
-    height: 2px;
-    background-color: #000;
+.drop{
+    width: 3px;
+    height: 3px;
+    background-color:slategray;
     margin: 3px;
+    cursor: pointer;
+}
+.bright{
+    background-color: #fff;
 }
 .nav{
-    background-color: rgb(238, 234, 234);
+    background-color: inherit;
     width: 100%;
     height: 30px;
     display: flex;
@@ -36,16 +40,16 @@ main{
     border-radius: 45px;
     align-items: center;
     margin: 0 5px;
+    cursor: pointer;
     background-image: linear-gradient(to left, rgb(47, 47, 49), rgb(255, 255, 253)) ;
 }
 .darkOrLight{
     position: relative;
     left:0 ;
-    background-color: #fff;
+    background-color: #000;
     border-radius: 50%;
     width: 15px;
     height: 15px;
-    cursor: pointer;
     margin: 0 3px;
     transition: 1s;
     
@@ -58,6 +62,7 @@ main{
 .move{
     left: 20px;
     margin-right: 3px;
+    background-color: #fff;
     transition: 1s;
 }
 

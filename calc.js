@@ -23,8 +23,10 @@ function clr(){
     console.log("my name")
     const play = document.querySelector(".darkOrLight")
     const main = document.getElementById("main")
-        play.classList.toggle("move");
-        main.classList.toggle("dark");
-       document.getElementById("input").style.color = "#fff"
-    
+                play.classList.toggle("move");
+                main.classList.toggle("dark");
+                document.getElementById("input").style.color = "#fff"
+     const drop = document.querySelectorAll(".drop");
+            drop.classList.toggle("bright")
+
 }
